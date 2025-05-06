@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link ref="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ivan Romano</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expirience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Ivan Romano</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="/assets/round_profile_picture.png" alt="Ivan Romano profile picture" class="profile-image">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="section_text">
+                        <p class="section__text__p1">Hello, I'm</p>
+                        <h1 class="title">Ivan Romano</h1>
+                        <P class="section__text__p2">Frontend Developer</P>
+                    </div>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2"
+                            onclick="window.open('https://drive.google.com/file/d/130-zQwKdjfjr8nwQUIW5x1MOWvi8QulC/view?usp=drive_link', '_blank')">
+                            Download CV
+                        </button>
+
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div id="socials-container">
+                        <a href="https://www.linkedin.com/in/ivan-romano-puente-870a78316/" target="_blank">
+                            <img src="/assets/linkedin_black_logo_icon_147114.png" alt="My LinkedIn Profile"
+                                class="icon">
+                        </a>
+                        <a href="https://github.com/IGRP08" target="_blank">
+                            <img src="/assets/github-logo_icon-icons.com_73546.png" alt="My LinkedIn Profile"
+                                class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <img src="/assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#about'" />
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <div class="section__pic-container">
+
+                <img src="/assets/second__prof_pic.jpg" alter="Profile picture" class="about-pic" />
+            </div>
+            <div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="/assets/certified_icon.png" alt="Html icon" class="icon">
+
+                            <h3>Experience</h3>
+                            <p>1 year <br /> Frontend Development </p>
+                        </div>
+                        <div class="details-container">
+                            <img src="/assets/Education (2).png" alt="Html icon" class="icon">
+
+                            <h3>Education</h3>
+                            <p>B. Soft. and Prog. Ing. <br /> Cyber Treath Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur omnis nobis officiis
+                        maiores nisi fugit odit a accusantium suscipit vero nam similique iure perspiciatis
+                        corrupti, nihil laborum atque corporis tempora sequi inventore impedit natus sed pariatur?
+                        Assumenda amet voluptas, quis praesentium expedita velit aspernatur illum ab consequuntur
+                        quasi, voluptatum animi.</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <img src="/assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#expirience'">
+    </section>
+
+    <!-- Experience Section -->
+
+    <section id="expirience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Fronted Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>HTML</h2>
+                                <p>Intermedite</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>CSS</h2>
+                                <p>Intermedite</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>Javascript</h2>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>Bootstrap</h2>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Fronted Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>Python</h2>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>C#</h2>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.png" alt="Experience icon" class="icon" />
+
+                            <div>
+                                <h2>SQL Server</h2>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="/assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+
+    </section>
+
+    <section id="projects">
+        <P class="section__text__p1">Browse My Recent</P>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="proyect-details-container color-container">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                                <div>
+                                    <img src="/assets/best-friend_website.jpeg" alt="Project 1" class="project-img">
+                                </div>
+                                <div class="back">
+                                    <div class="info">
+                                        <h2>More Information</h2>
+                                        <p>Here goes more info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container-2">
+                        <button class="btn btn-color-2"
+                            onclick="window.open('https://igrp08.github.io/Best-Friend-Veterinary-/', '_blank')">
+                            Demo </button>
+                        <button class="btn btn-color-1"> More Info </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <img src="/assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <p class="section__text__p1">
+            Get in Touch
+        </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="email-button-container">
+                <div>
+                    <button class="copy-button" onclick="copyEmail()">
+                        <img src="assets/email_icon_black.png" alt="Copy Email" class="contact-icons">
+                    </button>
+                    <span id="copyMessage" class="copied-message">Copied!</span>
+                </div>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/ivan-romano-puente-870a78316/" target="_blank">
+                    <img src="/assets/linkedin_black_logo_icon_147114.png" alt="My LinkedIn Profile"
+                        class="icon contact-icons">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer>
+            <nav id="desktop-nav">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#expirience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+            </nav>
+            <p>Copyright &#169; 2025 Ivan Romano. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+
+
+
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+</body>
+
+</html>
