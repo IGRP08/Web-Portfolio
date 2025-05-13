@@ -86,7 +86,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="mb-10">
 
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -115,11 +115,28 @@
                 </div>
 
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur omnis nobis officiis
-                        maiores nisi fugit odit a accusantium suscipit vero nam similique iure perspiciatis
-                        corrupti, nihil laborum atque corporis tempora sequi inventore impedit natus sed pariatur?
-                        Assumenda amet voluptas, quis praesentium expedita velit aspernatur illum ab consequuntur
-                        quasi, voluptatum animi.</p>
+                    <p>
+                        I’m a detail-oriented and solutions-driven professional with a hybrid background in front-end
+                        development, quality assurance, and technical support. My experience spans building responsive
+                        web interfaces, testing SaaS platforms, and providing high-level IT support to ensure seamless
+                        digital experiences.<br>
+
+                        <!-- 🔧 On the development side, I specialize in creating responsive, user-focused websites using
+                        HTML, CSS, JavaScript, and Bootstrap, while leveraging Git/GitHub and Scrum methodologies for
+                        efficient, collaborative delivery. I’ve built and tested landing pages, portfolios, and web
+                        applications with a strong focus on usability and performance.<br>
+
+                        🧪 As a QA Tester, I’ve worked on both functional and non-functional testing, including
+                        integration, E2E, unit, performance, and usability testing using tools like Selenium and JMeter.
+                        I’m passionate about ensuring software quality through structured test planning and active
+                        participation in the Software Development Life Cycle (SDLC).<br>
+
+                        🖥️ In technical support, I’ve provided remote troubleshooting, identity management via SAP IDM,
+                        and network/database assistance. I’m experienced in documenting cases in Salesforce, resolving
+                        high-priority issues, and maintaining operational excellence across systems.<br>
+
+                        I thrive in cross-functional teams, adapt quickly to new challenges, and am always eager to
+                        learn and grow in the ever-evolving tech landscape.</p> -->
                 </div>
 
 
@@ -133,7 +150,7 @@
 
     <!-- Experience Section -->
 
-    <section id="expirience">
+    <section id="expirience" class="pt-10">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -225,11 +242,12 @@
                                 <div>
                                     <img src="/assets/best-friend_website.jpeg" alt="Project 1" class="project-img">
                                 </div>
-                                <div class="back">
-                                    <div class="info">
-                                        <h2>More Information</h2>
-                                        <p>Here goes more info</p>
-                                    </div>
+                            </div>
+                            <div class="back">
+                                <button class="close-btn" onclick="closeFlip(this)">X</button>
+                                <div class="info">
+                                    <h2>More Information</h2>
+                                    <p>Here goes more info</p>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +257,7 @@
                         <button class="btn btn-color-2"
                             onclick="window.open('https://igrp08.github.io/Best-Friend-Veterinary-/', '_blank')">
                             Demo </button>
-                        <button class="btn btn-color-1"> More Info </button>
+                        <button class="btn btn-color-1" onclick="flipCard(this)"> More Info </button>
                     </div>
 
                 </div>

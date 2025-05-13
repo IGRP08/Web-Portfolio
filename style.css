@@ -172,10 +172,6 @@ section {
     display: flex;
 }
 
-.section-container {
-    display: flex;
-}
-
 /* PROFILE SECTION */
 
 #profile {
@@ -326,6 +322,7 @@ section {
 
 #about {
     position: relative;
+    border: solid blue;
 }
 
 .about-containers {
@@ -374,11 +371,19 @@ section {
     margin: auto 0;
 }
 
+.text-container p {
+    text-align: justify;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    flex: 1;
+    background: white;
+}
 
 /* EXPERIENCE SECTION*/
 
 #expirience {
     position: relative;
+    border: solid red;
 }
 
 .experience-sub-title {
@@ -539,14 +544,65 @@ article .icon {
 
 .flip-container {
     perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    margin: auto;
 }
 
 .flipper {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     transform-style: preserve-3d;
+    transition: 0.6s;
 
+}
+
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 2rem;
+}
+
+.front {
+    z-index: 2;
+    transform: rotate(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: solid 3px rgb(163, 163, 163);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+    z-index: 3;
+    transition: color 0.3 ease;
+}
+
+.close-btn:hover {
+    color: rgb(53, 53, 53);
 }
 
 /* FOOTER SECTION  */

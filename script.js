@@ -25,3 +25,13 @@ function copyEmail() {
     }, 2000);
 
 }
+
+function flipCard(button) {
+    const flipContainer = button.closest('.proyect-details-container').querySelector('.flip-container');
+    flipContainer.classList.toggle('flipped');
+}
+
+function closeFlip(button) {
+    const flipContainer = button.closest('.flip-container');
+    flipContainer.classList.remove('flipped');
+}
