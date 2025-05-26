@@ -27,7 +27,7 @@ function copyEmail() {
 }
 
 function flipCard(button) {
-    const flipContainer = button.closest('.proyect-details-container').querySelector('.flip-container');
+    const flipContainer = button.closest('.project-details-container').querySelector('.flip-container');
     flipContainer.classList.toggle('flipped');
 }
 
@@ -35,3 +35,16 @@ function closeFlip(button) {
     const flipContainer = button.closest('.flip-container');
     flipContainer.classList.remove('flipped');
 }
+
+// function toggleAboutText() {
+//     const moreText = document.getElementById("more-text");
+//     const seeMoreBtn = document.getElementById("see-more-btn");
+
+//     if (moreText.style.display === "none") {
+//         moreText.style.display = "inline";
+//         seeMoreBtn.textContent = "See Less";
+//     } else {
+//         moreText.style.display = "none";
+//         seeMoreBtn.textContent = "See More";
+//     }
+// }

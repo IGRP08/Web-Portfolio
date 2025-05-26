@@ -1,3 +1,41 @@
+@media screen and (min-width: 1401px) {
+
+    #profile {
+        height: 83hv;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    /* Profile Section */
+
+    #profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #profile .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto;
+        gap: 10rem;
+    }
+
+
+}
+
+
 @media screen and (max-width: 1400px) {
 
     #profile {
@@ -7,6 +45,28 @@
 
     .about-containers {
         flex-wrap: wrap;
+    }
+
+    /* Profile Section */
+
+    #profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
     }
 
 
@@ -37,19 +97,36 @@
         height: fit-content;
     }
 
+
+    /* Experience Section */
     #experience,
     .experience-details-container {
         margin-top: 2rem;
     }
 
+
     section {
-        margin: 0.5;
+        margin: 0 auto;
     }
 
     .section__pic-container {
-        width: 275px;
-        height: 275px;
+        width: 400px;
+        height: 400px;
         margin: 0 auto 2rem;
+    }
+
+
+    /* About Section */
+    #about .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto;
+
     }
 
     .about-containers {
@@ -58,6 +135,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    section {
+        margin: 0 auto
+    }
 
     #profile {
         height: 83vh;
@@ -74,7 +155,6 @@
     }
 
     .about-containers,
-    .contact-info-upper-container,
     .btn-container {
         flex-wrap: wrap;
     }
@@ -127,4 +207,161 @@
     footer {
         height: 40vh;
     }
+
+    /* Profile Section */
+
+    .section__pic-container {
+        display: flex;
+        height: 220px;
+        width: 220px;
+    }
+
+    /* About Me Section */
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #about .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    #about .row.align-items-center {
+        flex-direction: column;
+        width: auto;
+    }
+
+
+
+    .section__text__p1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    .about-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .details-container {
+        width: 90%;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* experience Section */
+
+    #experience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    #experience .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+
+    .experience-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #experience .about-containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 90%;
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+
+    /* #experience .row.align-items-center {
+        flex-direction: column;
+        width: auto;
+    } */
+
+
+    /* Projects Section */
+
+    .project-img {
+        width: 80vw;
+        height: auto;
+    }
+
+    /* Contact Section */
+
+    .contact-info-upper-container {
+
+        /* flex-direction: row; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        max-width: 80vw;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+
+        /*max-width: 100%;
+        padding: 1.5rem 0.5rem;
+        border-radius: 2rem;
+        gap: 1.5rem; */
+    }
+
+
+    /* Buttons */
+    .btn {
+        font-weight: 600;
+        transition: all 300ms ease;
+        padding: 1rem;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 2rem;
+        align-items: center;
+
+    }
+
 }
