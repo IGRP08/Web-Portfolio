@@ -20,7 +20,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -60,8 +60,16 @@
                     <h1 class="title">Ivan Romano</h1>
                     <p class="section__text__p2">Frontend Developer</p>
                     <div class="btn-container">
-                        <a href="https://drive.google.com/file/d/130-zQwKdjfjr8nwQUIW5x1MOWvi8QulC/view?usp=drive_link"
-                            target="_blank" class="btn btn-color-1">
+                        <a href="assets/developer_cv(2).pdf                        #desktop-nav, #hamburger-nav {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            z-index: 1000;
+                        }
+                        body {
+                            padding-top: 70px; /* Adjust this value to match your nav height */
+                        }" download="CV_IvanRomano.pdf" target="_blank" class="btn btn-color-1">
                             Download CV
                         </a>
                         <a href="#contact" class="btn btn-color-2">
@@ -106,12 +114,12 @@
                                     <div class="details-container mb-4 flex-grow-1 mx-2">
                                         <img src="assets/certified_icon.png" alt="experience icon" class="icon">
                                         <h3>Experience</h3>
-                                        <p>1 year <br /> Frontend Development</p>
+                                        <p>1+ year <br /> Frontend Development</p>
                                     </div>
                                     <div class="details-container mb-4 flex-grow-1 mx-2">
                                         <img src="assets/Education (2).png" alt="Education icon" class="icon">
                                         <h3>Education</h3>
-                                        <p>B. Soft. and Prog. Ing. <br /> Cyber Threat Management</p>
+                                        <p>B. Soft. and Prog. Ing. <br /> Cyber Threat Management <br /> Devops</p>
                                     </div>
                                 </div>
                             </div>
@@ -120,26 +128,33 @@
                                     I’m a detail-oriented and solutions-driven professional with a hybrid background in
                                     front-end
                                     development, quality assurance, and technical support.<br>
-                                    <!-- <span id="more-text" style="display: none;">
-                                🔧 On the development side, I specialize in creating responsive, user-focused websites using
-                                HTML, CSS, JavaScript, and Bootstrap, while leveraging Git/GitHub and Scrum methodologies for
-                                efficient, collaborative delivery. I’ve built and tested landing pages, portfolios, and web
-                                applications with a strong focus on usability and performance.<br>
 
-                                🧪 As a QA Tester, I’ve worked on both functional and non-functional testing, including
-                                integration, E2E, unit, performance, and usability testing using tools like Selenium and JMeter.
-                                I’m passionate about ensuring software quality through structured test planning and active
-                                participation in the Software Development Life Cycle (SDLC).<br>
+                                    🔧 On the development side, I specialize in creating responsive, user-focused
+                                    websites using HTML, CSS, JavaScript, and Bootstrap, while leveraging Git/GitHub and
+                                    Scrum
+                                    methodologies for efficient, collaborative delivery. I’ve built and tested landing
+                                    pages, portfolios,
+                                    and web applications with a strong focus on usability and performance.<br>
 
-                                🖥️ In technical support, I’ve provided remote troubleshooting, identity management via SAP IDM,
-                                and network/database assistance. I’m experienced in documenting cases in Salesforce, resolving
-                                high-priority issues, and maintaining operational excellence across systems.<br>
+                                    🧪 As a QA Tester, I’ve worked on both functional and non-functional testing,
+                                    including
+                                    integration, E2E, unit, performance, and usability testing using tools like Selenium
+                                    and JMeter.
+                                    I’m passionate about ensuring software quality through structured test planning and
+                                    active
+                                    participation in the Software Development Life Cycle (SDLC).<br>
 
-                                I thrive in cross-functional teams, adapt quickly to new challenges, and am always eager to
-                                learn and grow in the ever-evolving tech landscape.
-                            </span>
-                        </p>
-                        <button id="see-more-btn" class="btn btn-color-1 mt-3" onclick="toggleAboutText()">See More</button> -->
+                                    🖥️ In technical support, I’ve provided remote troubleshooting, identity management
+                                    via SAP IDM,
+                                    and network/database assistance. I’m experienced in documenting cases in Salesforce,
+                                    resolving
+                                    high-priority issues, and maintaining operational excellence across systems.<br>
+
+                                    I thrive in cross-functional teams, adapt quickly to new challenges, and am always
+                                    eager to
+                                    learn and grow in the ever-evolving tech landscape.
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -239,6 +254,7 @@
                                         <h2>Git</h2>
                                     </div>
                                 </article>
+
                                 <article>
                                     <img src="assets/selenium_icon_black.png" alt="experience icon" class="icon" />
 
@@ -247,6 +263,13 @@
                                     </div>
                                 </article>
 
+                                <article>
+                                    <img src="assets/azure_devops_icon.png" alt="experience icon" class="icon" />
+
+                                    <div>
+                                        <h2>Azure DevOps</h2>
+                                    </div>
+                                </article>
 
                             </div>
                         </div>
@@ -263,26 +286,27 @@
             <P class="section__text__p1">Browse My Recent</P>
             <h1 class="title">Projects</h1>
         </div>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="project-details-container color-container">
-                    <!-- <div class="flip-container">
-                        <div class="flipper">
-                            <div class="front"> -->
-                    <div>
-                        <img src="assets/best-friend_website.jpeg" alt="Project 1" class="project-img">
+        <div class="projects-containers">
+            <div class="project-details-container color-container">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div>
+                                <img src="assets/best-friend_website.jpeg" alt="Project 1" class="project-img">
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="info">
+                                <h2>Best Friend Veterinary - Landing Page Project</h2>
+                                <p>A responsive, user-friendly landing page designed for a veterinary clinic. Built with
+                                    HTML, CSS, JavaScript, and Bootstrap, the site features an appointment booking form,
+                                    service highlights, and a dedicated team section. The design ensures seamless
+                                    navigation across devices, emphasizing accessibility and trust for pet owners
+                                    seeking veterinary care.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="back">
-                    <button class="close-btn" onclick="closeFlip(this)">X</button>
-                    <div class="info">
-                        <h2>More Information</h2>
-                        <p>Here goes more info</p>
-                    </div>
-                </div>
-                <!-- </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <h2 class="experience-sub-title project-title">Project One</h2>
@@ -291,9 +315,7 @@
                 <button class="btn btn-color-2"
                     onclick="window.open('https://igrp08.github.io/Best-Friend-Veterinary-/', '_blank')">
                     Demo </button>
-                <button class="btn btn-color-1" onclick="flipCard(this)"> More Info </button>
             </div>
-        </div>
 
     </section>
 
@@ -309,7 +331,7 @@
                     <div>
 
                         <button class="copy-button" onclick="copyEmail()">
-                            <img src="assets/email_icon_black.png" alt="Copy Email" class="contact-icons">
+                            <img src="assets/email_icon_black.png" alt="Copy Email" class="icon contact-icons">
                         </button>
                         <span id="copyMessage" class="copied-message">Copied!</span>
                     </div>
@@ -330,7 +352,7 @@
                 <div>
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#experience">experience</a></li>
+                        <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>

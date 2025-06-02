@@ -27,7 +27,7 @@ function copyEmail() {
 }
 
 function flipCard(button) {
-    const flipContainer = button.closest('.project-details-container').querySelector('.flip-container');
+    const flipContainer = button.closest('.projects-containers').querySelector('.flip-container');
     flipContainer.classList.toggle('flipped');
 }
 

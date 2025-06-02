@@ -41,7 +41,7 @@ p {
 
 a,
 .btn {
-    transition: all 300 ease
+    transition: all 300ms ease
 }
 
 /* DESKTOP NAV */
@@ -91,8 +91,12 @@ a:hover {
 }
 
 .hamburger-menu {
-    position: relative;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10001;
     display: inline-block;
+
 }
 
 .hamburger-icon {
@@ -112,13 +116,16 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    left: auto;
     background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 9999;
 }
 
 .menu-links a {
@@ -168,7 +175,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 98vh;
+    min-height: 100vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -197,7 +204,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0rem;
     margin: 1.5rem;
 
@@ -271,6 +278,11 @@ section {
 
 }
 
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -321,6 +333,11 @@ section {
 .icon {
     cursor: pointer;
     height: 3.5rem;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease;
 }
 
 /* ABOUT SECTION */
@@ -391,12 +408,32 @@ section {
     margin: auto 0;
 }
 
-.text-container p {
-    text-align: justify;
+.text-container {
+    max-height: 250px;
+    overflow-y: auto;
     padding: 1.5rem;
     margin-bottom: 2rem;
     flex: 1;
     background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    /* Optional: for a modern look */
+    scrollbar-width: thin;
+    scrollbar-color: #bdbdbd #f5f5f5;
+}
+
+.text-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.text-container::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 4px;
+}
+
+.text-container::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 4px;
 }
 
 /* experience SECTION*/
@@ -417,6 +454,7 @@ section {
 .experience-details-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 
 }
@@ -451,7 +489,12 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    margin: 0 auto;
 }
 
 .color-container {
@@ -460,8 +503,8 @@ article .icon {
 }
 
 .project-img {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     width: 400px;
     height: auto;
     border-radius: 2rem;
@@ -492,6 +535,20 @@ article .icon {
     background-color: rgba(53, 53, 53, 0.5);
 }
 
+
+.info h2 {
+    padding: 2rem 1.5rem 2.5rem;
+    font-size: 1rem;
+    color: black;
+
+}
+
+.info p {
+    padding: 0 2rem 2.5rem;
+    font-size: 0.8rem;
+    color: rgb(85, 85, 85);
+}
+
 .btn-container-2 {
     display: flex;
     justify-content: center;
@@ -501,16 +558,73 @@ article .icon {
 
 }
 
+.projects-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 
 .project-details-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 1.5rem;
     background: white;
     border-color: rgb(163, 163, 163);
     text-align: center;
 
+}
+
+.project-title {
+    text-align: center;
+    margin: 1rem;
+    color: black;
+}
+
+.card-container {
+    width: 400px;
+    height: 400px;
+    perspective: 800px;
+}
+
+.card-container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(-180deg) rotateZ(-180deg);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border: none;
+
+}
+
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    background-color: rgba(220, 220, 220, 0.8);
+    transform: rotateY(-180deg) rotateZ(-180deg);
 }
 
 /*Contact Section*/
@@ -579,74 +693,8 @@ article .icon {
     margin-top: 3rem;
 }
 
-.project-title {
-    text-align: center;
-    margin: 1rem;
-    color: black;
-}
 
-.flip-container {
-    perspective: 1000px;
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.flipper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: 0.6s;
-
-}
-
-.flip-container.flipped .flipper {
-    transform: rotateY(180deg);
-}
-
-.front,
-.back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 2rem;
-}
-
-.front {
-    z-index: 2;
-    transform: rotate(0deg);
-}
-
-.back {
-    transform: rotateY(180deg);
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border: solid 3px rgb(163, 163, 163);
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(200, 200, 200);
-    cursor: pointer;
-    z-index: 3;
-    transition: color 0.3 ease;
-}
-
-.close-btn:hover {
-    color: rgb(53, 53, 53);
-}
 
 /* FOOTER SECTION  */
 
